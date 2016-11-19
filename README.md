@@ -11,3 +11,4 @@ This tutorial lets use the raspberryb pi using the terminal(SSH), but if you pre
 
 We've now setup the OS on the raspberry pi. 
 We are going to install node
+Here is a good tutorial to do so
