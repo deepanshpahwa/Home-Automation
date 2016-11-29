@@ -5,7 +5,7 @@ Hardware required: Raspberry pi Relay( Number of channels depends on you) Jumper
 
 Note: I have a mac so I'll be guiding you using that, you can find help online if you have a PC.
 
-**Step 1:** Setup
+##**Step 1:** Setup##
 
 Download Raspbian on your sd card and plug it in your raspberry pi. If you dont know how to do that, here is a good tutorial: https://medium.com/a-swift-misadventure/setup-your-raspberry-pi-2-3-with-raspbian-headless-without-cables-c78309fd7045#.of4kc99qq
 1. Start by downloading Raspbian with PIXEL: https://www.raspberrypi.org/downloads/raspbian/
@@ -39,5 +39,19 @@ network={
 We've now setup the OS on the raspberry pi. 
 We are going to install node
 
-##Step 4: let me get back to you guys on this one##
- Installing node on RPi
+##Step 4: Installing node on RPi##
+1. The first step will be to add the apt.adafruit.com package repository to your Pi's /etc/apt/sources.list file. You can do this by running the following command.
+```
+curl -sLS https://apt.adafruit.com/add | sudo bash
+```
+2. Next, we will install the latest version of node.js using apt-get.
+```
+sudo apt-get install node
+```
+3.If everything went as expected, we can check the installed version of node.js by running "node -v". it should return something like : 
+```
+v0.12.0
+```
+
+
+ 
