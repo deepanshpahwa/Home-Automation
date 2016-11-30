@@ -51,7 +51,8 @@ sudo apt-get install node
 v0.12.0
 ```
 4. You also need to install a GPIO module from the [npmjs website](https://www.npmjs.com/package/rpi-gpio).
-```npm install rpi-gpio
+```
+npm install rpi-gpio
 ```
 
 Now to install the appropriate files, open the directory where you want the server files to be installed. If you are new to all this, stick to desktop. Open terminal and clone my git repo.
@@ -73,10 +74,18 @@ Now connect whatever appliance you want to the relay.
 
 ##Step 6: Starting the node server ##
 Now, cd into the the Home-Automation directory and start the node server.
-```sudo node server.js
+```
+sudo node server.js
 ```
 As of now, all the devices connected to the same wifi as RPi can send a signal and turn the appliance on or off.
 To do this open the browser on a device and type "http://<pi ip address>:2368/lights?state=1" so if my ip address is 192.168.1.35, I'll enter http://192.168.1.35:2368/lights?state=1 . Changing the state from 1 to 0 will switch it on or off. You should hear a click on your relay.
+Would like to add a couple of more points.
+- To control multiple channels on the relay you'll need to learn a little bit of node js and do it yourself. 
+- If you want to make a mobile app that can do this, look into [retrofit](https://square.github.io/retrofit/)
+- If you are trying to do this with apache web server, it probably will not happen. You are better of doing it the node way.
+- If you want to control your appliance without connecting to the wifo al the time you'll have to get a static ip address from your ISP.
+- Your RPi doesn't have a static internal ip address either so it might change from time to time. To avoid this, look at this [tutorial])https://nebulousthinking.wordpress.com/2016/02/25/setting-a-static-ip-for-raspbian-jessie-in-2016/).
+##Happy experimenting. ##
 
 
  
