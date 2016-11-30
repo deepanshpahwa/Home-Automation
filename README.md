@@ -1,9 +1,15 @@
 # Home-Automation
 This is a guide on how to automate a couple of things around you(lights, lamps etc.) 
+I would like to start by informing the reader that before trying this method, I tried using the apache web server method and it didn't work for me. After reading a lot on the internet I have written this tutorial because I couldn't find a descent one that has explains everything. Also if you dont understand anything or would like to point out something I missed or something that's wrong, feel free to infrom me. 
 
-Hardware required: Raspberry pi Relay( Number of channels depends on you) Jumper cables (female to female) SD card (for your Raspberry Pi)
+Hardware required: 
+-Raspberry pi (2 or 3)
+-Relay(Number of channels depends on you) 
+-Jumper cables (female to female) 
+-ethernet cable
+-SD card >= 8 GB (for your Raspberry Pi)
 
-Note: I have a mac so I'll be guiding you using that, you can find help online if you have a PC.
+Note: I have a mac so I'll be guiding you using that, you can use bash if you have a PC(I guess).
 
 ##**Step 1:** Setup##
 1. Start by downloading Raspbian with PIXEL from here https://www.raspberrypi.org/downloads/raspbian/
