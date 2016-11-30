@@ -64,10 +64,10 @@ git clone https://github.com/deepanshpahwa/Home-Automation
 If you don't know what a relay is, you should google it and undersand the basic idea. It is basically just a switch which will get switched on whenever the pin ints connected to on RPI will get power. 
 ![Raspberry Pi 3 GPIO layout](https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-10-339300/pi3_gpio.png)
 ![4-channel Relay image](http://img.banggood.com/images/upload/2012/sku090677g.JPG)
- Take female to female jumper cables and connect like so:
-    - from GND on relay to GND on RPi.
-    - from IN1 on relay to pin#3(GPIO2) on RPi.
-    - from VCC on relay to pin#2 on RPi. (This is to power your relay, if you have external power source for yur relay, skip this.)
+Take female to female jumper cables and connect like so:
+- from GND on relay to GND on RPi.
+- from IN1 on relay to pin#3(GPIO2) on RPi.
+- from VCC on relay to pin#2 on RPi. (This is to power your relay, if you have external power source for yur relay, skip this.)
 **NOTE:** If you want to change the pin number you can do so by opening the server.js file with text editor and changing the pin number. Keep in mind that we are talking about the pin number and the GPIO number.
 
 Now connect whatever appliance you want to the relay.
@@ -84,7 +84,8 @@ Would like to add a couple of more points.
 - If you want to make a mobile app that can do this, look into [retrofit](https://square.github.io/retrofit/)
 - If you are trying to do this with apache web server, it probably will not happen. You are better of doing it the node way.
 - If you want to control your appliance without connecting to the wifo al the time you'll have to get a static ip address from your ISP.
-- Your RPi doesn't have a static internal ip address either so it might change from time to time. To avoid this, look at this [tutorial])https://nebulousthinking.wordpress.com/2016/02/25/setting-a-static-ip-for-raspbian-jessie-in-2016/).
+- Your RPi doesn't have a static internal ip address either so it might change from time to time. To avoid this, look at this [tutorial](https://nebulousthinking.wordpress.com/2016/02/25/setting-a-static-ip-for-raspbian-jessie-in-2016/).
+
 ##Happy experimenting. ##
 
 
