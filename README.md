@@ -93,6 +93,7 @@ I would like to add a couple of more points before ending.
 - If you are trying to do this with apache web server, it probably will not happen. You are better of doing it the node way.
 - If you want to control your appliance without connecting to the wifo al the time you'll have to get a static ip address from your ISP.
 - Your RPi doesn't have a static internal ip address either so it might change from time to time. To avoid this, look at this [tutorial](https://nebulousthinking.wordpress.com/2016/02/25/setting-a-static-ip-for-raspbian-jessie-in-2016/).
+- If you want to keep the seving running forever even when it crashes, you can look into [forever](https://www.npmjs.com/package/forever)(yeah, that's what it's called)
 
 ##Happy experimenting. ##
 
