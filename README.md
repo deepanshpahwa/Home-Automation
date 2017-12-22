@@ -76,7 +76,7 @@ git clone https://github.com/deepanshpahwa/Home-Automation
 
 **Step 5:** Setting up the relay.
 If you don't know what a relay is, you should google it and undersand the basic idea. It is basically just a switch which will get switched on whenever the pin ints connected to on RPI will get power. 
-![Raspberry Pi 3 GPIO layout](https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-10-339300/pi3_gpio.png)
+![Raspberry Pi 3 GPIO layout](https://i.stack.imgur.com/RILry.png)
 ![4-channel Relay image](http://img.banggood.com/images/upload/2012/sku090677g.JPG)
 
 Take female to female jumper cables and connect like so:
